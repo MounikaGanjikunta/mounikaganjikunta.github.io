@@ -1,0 +1,39 @@
+# Site settings
+name: Saketh Jammula
+title: Saketh Jammula | Computer Science grad student
+description: CS Grad focused on building projects and experiences!
+url: https://sakethjammula.github.io/
+baseurl: ''
+email: SakethReddy.Jammula@uga.edu
+cover: ''
+logo: ''
+resume: https://sakethjammula.github.io/resume.pdf
+social:
+  - title: email
+    url: mailto:SakethReddy.Jammula@uga.edu
+  - title: github
+    url: https://github.com/sakethjammula
+  - title: linkedin
+    url: https://www.linkedin.com/in/sakethjammula/
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.gemspec'
+  - 'README.md'
+  - 'node_modules'
+  - 'build'
+  - 'gulpfile.js'
+  - 'package.json'
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+
+plugins_dir:
+  - jekyll-minifier
+  - jekyll-sitemap
