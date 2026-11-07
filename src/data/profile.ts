@@ -48,6 +48,13 @@ export const projects = [
     tags: ['Python', 'NumPy', 'SciPy', 'Plotly Dash', 'Flask', 'Heroku']
   },
   {
+    title: 'UsageLens — AI Billing Investigation',
+    summary: 'Built an AI-assisted Cloudflare application that investigates metering discrepancies while deterministic TypeScript rules remain authoritative for billing calculations and Durable Objects preserve state and audit history.',
+    tags: ['Cloudflare Workers', 'Workers AI', 'Agents SDK', 'Durable Objects', 'TypeScript', 'React', 'Tool Calling', 'Vitest'],
+    href: 'https://usagelens.g-mounika36.workers.dev',
+    linkLabel: 'Open live demo'
+  },
+  {
     title: 'Few-Shot Face Verification',
     summary: 'Designed a Siamese convolutional network for comparing faces with limited labeled data, evaluating multiple similarity measures and reaching 90% verification accuracy on the ORL dataset.',
     tags: ['PyTorch', 'Siamese CNN', 'Contrastive Learning', 'Computer Vision', 'Machine Learning']

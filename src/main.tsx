@@ -201,7 +201,7 @@ function Projects() {
         <div className="mt-10 grid gap-5 lg:grid-cols-3">
           {projects.map((project, index) => (
             <article
-              className={`card ${index === 0 ? "lg:col-span-2" : ""}`}
+              className={`card ${index % 2 === 0 ? "lg:col-span-2" : ""}`}
               key={project.title}
             >
               <h3 className="text-2xl font-semibold">{project.title}</h3>
@@ -239,6 +239,17 @@ function Projects() {
                   </span>
                 ))}
               </div>
+
+              {project.href && (
+                <a
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-blue-700 hover:text-blue-900"
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {project.linkLabel} <ArrowUpRight className="h-4 w-4" />
+                </a>
+              )}
             </article>
           ))}
         </div>
