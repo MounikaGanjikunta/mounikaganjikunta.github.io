@@ -9,7 +9,7 @@ import {
   PenLine,
 } from "lucide-react";
 import "./index.css";
-import { articles, experiences, links, projects, skills } from "./data/profile";
+import { articles, education, experiences, links, projects, skills } from "./data/profile";
 
 const fadeUp = {
   initial: { opacity: 0, y: 18 },
@@ -29,6 +29,7 @@ function Navbar() {
           <a href="#about" className="hover:text-blue-600">About</a>
           <a href="#experience" className="hover:text-blue-600">Experience</a>
           <a href="#projects" className="hover:text-blue-600">Projects</a>
+          <a href="#education" className="hover:text-blue-600">Education</a>
           <a href="#writing" className="hover:text-blue-600">Writing</a>
           <a href="#contact" className="hover:text-blue-600">Contact</a>
         </div>
@@ -42,17 +43,17 @@ function Hero() {
     <section id="home" className="section flex min-h-[82vh] items-center">
       <motion.div {...fadeUp} className="max-w-4xl">
         <div className="mb-6 inline-flex rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700">
-          Backend Software Engineer • Java • Spring Boot • AWS • FastAPI
+          Software Engineer • Backend • Full-Stack • Applied AI
         </div>
 
         <h1 className="text-5xl font-bold tracking-tight text-slate-950 md:text-7xl">
-          Designing backend systems that solve complex business problems.
+          Building reliable software systems from architecture to production.
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
-        I'm Mounika, a Backend Software Engineer with 8+ years of experience building enterprise applications across government,
-        financial services, and AI-enabled platforms. I enjoy designing scalable backend systems, modernizing legacy applications,
-        and transforming complex business requirements into reliable, maintainable software.
+        I'm Mounika, a software engineer with 8+ years of experience across public services, banking,
+        online sports, applied research, and AI products. I build backend and full-stack systems that combine
+        dependable application architecture with cloud, data, and LLM capabilities.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">
@@ -83,10 +84,11 @@ function Hero() {
         <div className="mt-10 grid max-w-3xl gap-3 sm:grid-cols-3">
           {[
             "8+ Years Experience",
-            "AI-enabled Solutions",
-            "Data-intensive Systems",
+            "Applied AI & RAG",
+            "Production Systems",
             "Enterprise Modernization",
-            "Cloud & AI Workflows"
+            "Cloud Architecture",
+            "Full-Stack Delivery"
           ].map((item) => (
             <div
               key={item}
@@ -122,18 +124,19 @@ function About() {
           </p>
 
           <p>
-          My experience spans enterprise modernization, financial data platforms, cloud-native applications,
-          and AI-enabled systems. I've designed APIs, backend services, cloud infrastructure, and data-intensive workflows
-          where reliability, performance, and maintainability are critical.
+          My experience spans public-sector modernization, banking, real-time sportsbook products,
+          applied research, and AI-enabled systems. I've worked across APIs, user-facing applications,
+          cloud infrastructure, data pipelines, and LLM workflows where reliability and traceability matter.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">
             {[
               "Backend Engineering",
+              "Full-Stack Delivery",
               "API Design",
               "System Design",
               "Cloud Architecture",
-              "AI Applications",
+              "Applied AI",
             ].map((x) => (
               <span className="pill" key={x}>
                 {x}
@@ -154,7 +157,7 @@ function Experience() {
           Experience
         </p>
         <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">
-          Engineering across enterprise, finance, and data platforms.
+          Engineering across public services, research, sports technology, and banking.
         </h2>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2">
@@ -170,11 +173,7 @@ function Experience() {
                 <span className="text-sm text-slate-500">{exp.period}</span>
               </div>
 
-              <p className="mt-4 leading-7 text-slate-600">
-                {exp.company === "Commonwealth of Kentucky"
-                  ? "Led modernization of enterprise licensing platforms serving 5,000+ users by improving backend services, APIs, business workflows, performance, accessibility, and reliability."
-                  : exp.summary}
-              </p>
+              <p className="mt-4 leading-7 text-slate-600">{exp.summary}</p>
 
               <div className="mt-5 flex flex-wrap gap-2">
                 {exp.tags.map((tag) => (
@@ -281,6 +280,38 @@ function Skills() {
                 ))}
               </div>
             </div>
+          ))}
+        </div>
+      </motion.div>
+    </section>
+  );
+}
+
+function Education() {
+  return (
+    <section id="education" className="section">
+      <motion.div {...fadeUp}>
+        <p className="text-sm font-semibold uppercase tracking-widest text-blue-600">
+          Education
+        </p>
+        <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">
+          Academic foundation and applied research.
+        </h2>
+
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
+          {education.map((item) => (
+            <article className="card" key={item.degree}>
+              <div className="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-950">
+                    {item.degree}
+                  </h3>
+                  <p className="mt-2 font-medium text-blue-700">{item.school}</p>
+                </div>
+                <span className="text-sm text-slate-500">{item.period}</span>
+              </div>
+              <p className="mt-4 leading-7 text-slate-600">{item.detail}</p>
+            </article>
           ))}
         </div>
       </motion.div>
@@ -411,6 +442,7 @@ function App() {
         <Experience />
         <Projects />
         <Skills />
+        <Education />
         <Writing />
         <Contact />
       </main>

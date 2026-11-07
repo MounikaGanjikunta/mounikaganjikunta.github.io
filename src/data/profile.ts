@@ -2,65 +2,81 @@ export const links = {
   github: 'https://github.com/MounikaGanjikunta',
   linkedin: 'https://www.linkedin.com/in/mounikaganjikunta/',
   medium: 'https://medium.com/@g.mounika36',
-  email: 'mailto:g.mounika36@gmail.com',
+  email: 'mailto:mounikaganjiku@gmail.com',
   resume: '/resume.pdf'
 };
 
 export const experiences = [
   {
-    company: 'Commonwealth of Kentucky',
-    role: 'Senior Application Developer',
+    company: 'Vibrant Tech · Kentucky Public Protection Cabinet',
+    role: 'Senior Software Engineer',
     period: '2023 — Present',
-    summary: 'Modernizing public-facing licensing platforms serving 5,000+ users with improved performance, accessibility, and reliability.',
-    tags: ['ASP.NET Core', 'Angular', 'SQL Server', 'Splunk', 'Enterprise Modernization']
+    summary: 'Leading modernization of a configuration-driven platform shared across 40+ departments, with reusable .NET and Angular components, accessible workflows, and production observability.',
+    tags: ['ASP.NET Core', 'Angular', 'SQL Server', 'OpenTelemetry', 'Splunk', 'WCAG']
   },
   {
-    company: 'Bank of Montreal',
-    role: 'Developer Intern',
-    period: '2022',
-    summary: 'Built and optimized backend data workflows, ETL pipelines, SQL procedures, and reporting systems for high-volume financial datasets.',
-    tags: ['SQL', 'SSIS', 'SSRS', 'ETL', 'Data Integrity']
+    company: 'University of Georgia',
+    role: 'Graduate Research Assistant',
+    period: '2021 — 2023',
+    summary: 'Turned published food-safety research and microbial challenge studies into an industry-facing prediction application covering growth, treatment effectiveness, and shelf life.',
+    tags: ['Python', 'NumPy', 'SciPy', 'Plotly Dash', 'Flask', 'Predictive Modeling']
   },
   {
     company: 'Entain',
     role: 'Senior Software Engineer',
     period: '2019 — 2021',
-    summary: 'Contributed to large-scale data migration and reporting platforms with focus on performance, validation, and automation.',
-    tags: ['ETL', 'Power BI', 'Jenkins', 'Data Platforms', 'Automation']
+    summary: 'Delivered real-time Angular features for high-traffic sportsbook products, integrated .NET services and WebSocket workflows, and supported large-scale transactional data modernization.',
+    tags: ['Angular', '.NET', 'WebSockets', 'RxJS', 'Cloudflare Workers', 'SQL']
   },
   {
     company: 'Infosys',
     role: 'Software Engineer',
     period: '2016 — 2019',
-    summary: 'Built automation frameworks, Java utilities, and backend components for banking workflows and enterprise applications.',
-    tags: ['Java', 'Selenium', 'Spring Boot', 'SQL', 'Banking']
+    summary: 'Built Java and Spring Boot services for Finacle-integrated banking workflows, improved high-volume SQL reporting, and created a reusable regression-testing framework adopted across teams.',
+    tags: ['Java', 'Spring Boot', 'REST APIs', 'SQL Server', 'TestRail', 'Banking']
   }
 ];
 
 export const projects = [
   {
-    title: 'AI-enabled Healthcare Platform',
-    summary: 'Designed backend services and cloud-native architecture supporting AI-assisted workflows, secure APIs, asynchronous processing, and scalable document-processing pipelines.',
-    tags: ['FastAPI', 'AWS', 'PostgreSQL', 'Redis', 'React', 'LLM Integration', 'SQS']
+    title: 'Personalized Healthcare AI Assistant',
+    summary: 'Architected a multimodal platform that routes health-related inputs through specialized LLM workflows, retrieves relevant evidence and user history, and preserves traceable request state across secure cloud services.',
+    tags: ['FastAPI', 'React', 'PostgreSQL', 'pgvector', 'Gemini', 'RAG', 'AWS', 'Langfuse']
   },
   {
-    title: 'Shelf-Life Prediction',
-    summary: 'Built machine learning applications to predict microorganism growth and inactivation using predictive models, Python, Flask, and Heroku.',
-    tags: ['Python', 'Machine Learning', 'Flask', 'Heroku', 'Research']
+    title: 'Food Safety and Shelf-Life Modeling',
+    summary: 'Converted microbial challenge data and published predictive models into a self-service application that estimates Listeria growth, treatment response, and shelf life across 16 food categories.',
+    tags: ['Python', 'NumPy', 'SciPy', 'Plotly Dash', 'Flask', 'Heroku']
   },
   {
-    title: 'Engineering Playground',
-    summary: 'Hands-on explorations around Kafka, Redis, API design, and system design concepts to strengthen scalable backend engineering depth.',
-    tags: ['Kafka', 'Redis', 'System Design', 'REST APIs','Distributed Systems','Microservices','Docker']
+    title: 'Few-Shot Face Verification',
+    summary: 'Designed a Siamese convolutional network for comparing faces with limited labeled data, evaluating multiple similarity measures and reaching 90% verification accuracy on the ORL dataset.',
+    tags: ['PyTorch', 'Siamese CNN', 'Contrastive Learning', 'Computer Vision', 'Machine Learning']
   }
 ];
 
 export const skills = [
-  { group: 'Backend', items: ['Java', 'Spring Boot', 'ASP.NET Core', 'FastAPI', 'Python'] },
-  { group: 'Cloud & DevOps', items: ['AWS', 'Docker', 'Jenkins', 'CI/CD', 'Git'] },
-  { group: 'Databases', items: ['PostgreSQL', 'SQL Server', 'MongoDB', 'Redis'] },
-  { group: 'Frontend', items: ['Angular', 'React', 'TypeScript'] },
-  { group: 'Data & AI', items: ['LLM Integration', 'ETL', 'Power BI', 'Document Processing'] }
+  { group: 'Backend & Languages', items: ['Java', 'C#', 'Python', 'TypeScript', 'SQL', 'Spring Boot', 'ASP.NET Core', 'FastAPI'] },
+  { group: 'Applied AI', items: ['LLM Orchestration', 'RAG', 'Multimodal Processing', 'Vector Embeddings', 'Semantic Retrieval', 'Prompt Engineering'] },
+  { group: 'Cloud & Delivery', items: ['AWS EC2', 'S3', 'RDS', 'SQS', 'CloudFront', 'Docker', 'Jenkins', 'CI/CD'] },
+  { group: 'Data & Observability', items: ['PostgreSQL', 'pgvector', 'SQL Server', 'OpenTelemetry', 'Splunk', 'Langfuse'] },
+  { group: 'Frontend & Realtime', items: ['Angular', 'React', 'Plotly Dash', 'WebSockets', 'RxJS'] },
+  { group: 'Architecture', items: ['REST APIs', 'Distributed Systems', 'Microservices', 'OAuth & JWT', 'Event-Driven Systems'] }
+];
+
+export const education = [
+  {
+    degree: 'Master of Science in Computer Science',
+    school: 'University of Georgia',
+    period: '2021 — 2023',
+    detail: 'GPA 3.83/4.0 · Graduate research spanning applied machine learning, predictive modeling, and production software.'
+  },
+  {
+    degree: 'Bachelor of Technology in Electronics and Communication Engineering',
+    school: 'JNTU Hyderabad',
+    period: '2012 — 2016',
+    detail: 'Engineering foundation across computing, electronics, and communication systems.'
+  }
 ];
 
 export const articles = [
