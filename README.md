@@ -1,42 +1,33 @@
-# Mounika Portfolio
+# Mounika Ganjikunta Portfolio
 
-A clean React + Vite + TypeScript portfolio for Mounika Ganjikunta.
+The source for my personal engineering portfolio: [mounikaganjikunta.github.io](https://mounikaganjikunta.github.io/).
+
+The site presents my experience, selected projects, technical skills, education, and writing in a responsive single-page interface.
+
+## Highlights
+
+- Data-driven profile content that is easy to update
+- Responsive project, experience, education, and skills sections
+- A short portfolio URL for my healthcare architecture article
+- Automatic GitHub Pages deployment from the `main` branch
+
+## Technology
+
+React · TypeScript · Vite · Tailwind CSS · Framer Motion · Lucide Icons · GitHub Actions
 
 ## Run locally
 
+Node.js 22 is recommended.
+
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-Open the local URL shown in the terminal, usually `http://localhost:5173`.
-
-## Build
+Run a production build with:
 
 ```bash
 npm run build
-npm run preview
 ```
 
-## Customize
-
-Most profile content lives in:
-
-```bash
-src/data/profile.ts
-```
-
-Replace `public/resume.pdf` with your latest resume if you want the Resume button to work.
-
-## Deploy to GitHub Pages
-
-1. Create a GitHub repository, for example `mounika-portfolio`.
-2. Push this project to the repository.
-3. Run:
-
-```bash
-npm install
-npm run build
-```
-
-4. In GitHub, go to **Settings → Pages** and deploy from GitHub Actions or the `dist` folder using your preferred setup.
+Most portfolio content is maintained in `src/data/profile.ts`. The deployment workflow lives in `.github/workflows/deploy.yml` and publishes the Vite production build to GitHub Pages after a push to `main`.
