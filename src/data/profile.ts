@@ -7,7 +7,7 @@ export const links = {
 
 export const experiences = [
   {
-    company: 'Vibrant Tech · Kentucky Public Protection Cabinet',
+    company: 'Kentucky Public Protection Cabinet',
     role: 'Senior Software Engineer',
     period: '2023 — Present',
     summary: 'Leading modernization of a configuration-driven platform shared across 40+ departments, with reusable .NET and Angular components, accessible workflows, and production observability.',
