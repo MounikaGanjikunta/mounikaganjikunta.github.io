@@ -2,8 +2,7 @@ export const links = {
   github: 'https://github.com/MounikaGanjikunta',
   linkedin: 'https://www.linkedin.com/in/mounikaganjikunta/',
   medium: 'https://medium.com/@g.mounika36',
-  email: 'mailto:mounikaganjiku@gmail.com',
-  resume: '/resume.pdf'
+  email: 'mailto:mounikaganjiku@gmail.com'
 };
 
 export const experiences = [

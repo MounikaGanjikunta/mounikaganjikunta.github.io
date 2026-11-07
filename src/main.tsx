@@ -46,7 +46,7 @@ function Hero() {
           Software Engineer • Backend • Full-Stack • Applied AI
         </div>
 
-        <h1 className="text-5xl font-bold tracking-tight text-slate-950 md:text-7xl">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl md:text-6xl">
           Building reliable software systems from architecture to production.
         </h1>
 
@@ -57,12 +57,6 @@ function Hero() {
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          {/* <a
-            className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700"
-            href={links.resume}
-          >
-            Resume
-          </a> */}
           <a
             className="pill hover:border-blue-300 hover:text-blue-700"
             href={links.github}
@@ -422,9 +416,11 @@ function Contact() {
 
           <a
             className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
-            href={links.resume}
+            href={links.medium}
+            target="_blank"
+            rel="noreferrer"
           >
-            Resume
+            <PenLine className="h-4 w-4" /> Medium
           </a>
         </div>
       </motion.div>
